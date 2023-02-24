@@ -1,0 +1,483 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    margin: 0;
+    background-color: #ecfbfc;
+    color: #293241;
+}
+
+/****************** Header ******************/
+
+header {
+    background-color: #ee6c4d;
+}
+
+header .inner-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.hamburger {
+    width: 5rem;
+    padding: 0.25rem;
+    background-color: #ecfbfc;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger svg {
+    fill: #ee6c4d;
+}
+
+.hamburger:hover,
+.hamburger:active {
+    background-color: #293241;
+    cursor: pointer;
+}
+
+header nav {
+    position: absolute;
+    top: 7.3rem;
+    width: 100vw;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.7s ease-in-out;
+    background-color: #293241;
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+}
+
+.show {
+    max-height: 40rem;
+    border-bottom: 3px solid #2c3e5b;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    
+}
+
+nav ul li {
+    line-height: 4rem;
+    width: 100%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ecfbfc;
+    display: block;
+    text-transform: uppercase;
+}
+
+nav ul li a:active,
+nav ul li a:hover {
+    background-color: #ee6c4d;
+}
+
+
+/****************** Typography ******************/
+
+header h1 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #ecfbfc;
+    text-transform: uppercase;
+}
+
+header h1 a:hover,
+header h1 a:active {
+    color: #293241;
+}
+
+h2 {
+    color: #ee6c4d;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    color: #ecfbfc;
+}
+
+p {
+    line-height: 2rem;
+}
+
+/********* Error Message *********/
+div.message {
+    background: #ee6c4d;
+    border-radius: 5px;
+    padding: 2rem;
+    color: #293241;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-bottom: 1.5rem;
+}
+
+div.message p{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/****************** Main ******************/
+main {
+    display: grid;
+    gap: 2rem;
+}
+
+main > div:not(div.jobs){
+    margin: 3rem 1rem 0rem;
+}
+
+form > div:not(form > div:last-of-type) {
+    margin-bottom: 1rem;
+}
+
+form > div > input,
+form > div > select,
+form > div > textarea {
+    width: 100%;
+    height: 4.8rem;
+    border: 2px solid #293241;
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: #fff;
+}
+
+form > div > textarea {
+    height: 10rem;
+}
+
+form > div > input[type=submit] {
+    background-color: #293241;
+    color: #ecfbfc;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+}
+
+form > div > input[type=submit]:hover,
+form > div > input[type=submit]:active {
+    background-color: #ee6c4d;
+    color: #ecfbfc;
+    cursor: pointer;
+}
+
+div.logged-out {
+    order: -1;
+}
+
+/********* Jobs Section *********/
+div.jobs {
+    background: #293241;
+    color: #ecfbfc;
+    margin: 3rem 0rem 0rem;
+    padding: 3rem 1rem;
+}
+
+div.ads {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    border: 2px solid #ee6c4d;
+    padding: 1rem;
+}
+
+div.ads p {
+    width: 100%;
+}
+
+p.ad-date {
+    font-size: 1.5rem;
+}
+
+p.ad-description {
+    margin: 1.5rem 0;
+}
+
+div.ad-links {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.ad-links a {
+    color: #ecfbfc;
+    margin-right: 2rem;
+}
+
+div.ad-links a:hover,
+div.ad-links a:active {
+    color: #ee6c4d;
+}
+
+/********* Pagination *********/
+ul.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+ul.pagination li:not(ul.pagination li:first-of-type) a {
+    background-color: #ee6c4d;
+    border-radius: 5px;
+    padding: 0 1rem;
+    color: #ecfbfc;
+    display: block;
+    text-decoration: none;
+}
+ul.pagination li:not(ul.pagination li:first-of-type) a:hover,
+ul.pagination li:not(ul.pagination li:first-of-type) a:active {
+    background-color: #ecfbfc;
+    color: #ee6c4d;
+}
+
+a.view-details,
+a.back-menu {
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #ee6c4d;
+    color: #293241;
+}
+
+a.view-details:hover,
+a.back-menu:hover {
+    background-color: #293241;
+    color: #ecfbfc;
+}
+
+
+/********* Change Password Page *********/
+body.changepass main {
+    margin: 3rem 1rem 0rem;
+}
+
+/********* Footer *********/
+
+footer {
+    background-color: #dbdedf;
+    margin: 10rem 0 0;
+}
+
+footer div {
+    padding: 3rem;
+}
+
+@media screen and (min-width: 505px) {
+    div.register form,
+    body.changepass main{
+        width: 50rem;
+        margin: 0 auto;
+    }
+
+    body.changepass main {
+        margin: 3rem auto;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    header > div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    header nav {
+        position: static;
+        max-height: 40rem;
+        overflow: visible;
+    }
+
+    nav ul {
+        padding: 1rem;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: #ee6c4d;
+        
+    }
+
+    nav ul li {
+        line-height: 4rem;
+        width: unset;
+        margin: 0 1rem;
+    }
+
+    nav ul li a:active,
+    nav ul li a:hover {
+    color: #293241;
+    }
+
+    /********* Login Form 650px *********/
+    div.logged-out form {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "header header"
+        "username password"
+        "empty submit";
+    }
+
+    div.logged-out form h2{
+        grid-area: header;
+    }
+
+    div.logged-out form > div:nth-of-type(1) {
+        grid-area: username;
+    }
+
+    div.logged-out form > div:nth-of-type(2) {
+        grid-area: password;
+    }
+
+    div.logged-out form > div:nth-of-type(5) {
+        grid-area: submit;
+    }
+
+    div.logged-in form > div:nth-of-type(5) {
+        width: 50%;
+    }
+
+
+
+    /********* Search Form 650px *********/
+    div.search form{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "header header"
+        "search sortby"
+        "sortorder pagelimit"
+        "empty submit";
+    }
+
+    div.search form h2{
+        grid-area: header;
+    }
+
+    div.search form > div:nth-of-type(1) {
+        grid-area: search;
+    }
+
+    div.search form > div:nth-of-type(2) {
+        grid-area: sortby;
+    }
+
+    div.search form > div:nth-of-type(3) {
+        grid-area: sortorder;
+    }
+
+    div.search form > div:nth-of-type(4) {
+        grid-area: pagelimit;
+    }
+
+    div.search form > div:nth-of-type(5) {
+        grid-area: submit;
+    }
+
+    body.myads div.ad-form input[type=submit]{
+        width: 35rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    body.home main {
+        display: grid;
+        grid-template-columns: 20rem auto 32rem;
+    }
+
+    div.search form{
+        display: unset;
+    }
+
+    div.logged-out {
+        order: unset;
+    }
+
+    div.logged-out form{
+        display: unset;
+    }
+
+    div.jobs {
+        background: #ecfbfc;
+        color: #293241;
+        padding: 0rem 1rem;
+    }
+
+    h3 {
+        color: #293241;
+    }
+
+    div.ad-links a {
+        color: #293241;
+    }
+    
+    div.ad-links a:hover,
+    div.ad-links a:active {
+        color: #ee6c4d;
+    }
+
+    body.my-ads main {
+        display: grid;
+        grid-template-columns: auto 20.2rem;
+    }
+
+    ul.pagination li:not(ul.pagination li:first-of-type) a:hover,
+    ul.pagination li:not(ul.pagination li:first-of-type) a:active {
+        background-color: #293241;
+        color: #ecfbfc;
+    }
+
+    body.myads main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    body.myads main > div:first-of-type {
+        order: 1;
+    }
+}
+
+@media screen and (min-width: 1355px) {
+    main,
+    footer div,
+    header > div {
+        width: 1360px;
+        margin: 0 auto;
+    }
+
+    div.jobs {
+        /* display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem; */
+    }
+
+    div.jobs h2,
+    div.jobs ul.pagination {
+        grid-column: 1 / span 2;
+    }
+} 
