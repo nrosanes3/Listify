@@ -1,4 +1,4 @@
-# For Sale Posting System
+# Listify
 A For Sale posting system where visitors can view ads and registered users can post their own ads. Once registered, users can log in and post a new item for sale ad, mark an ad as sold so it is no longer visible to the public, mark it as available so it is viewable again, edit the ad, and delete it from the system.
 
 ## Features
